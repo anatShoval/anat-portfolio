@@ -1,0 +1,33 @@
+{
+  "name": "anat-knebel-shoval-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anatShoval/anat-knebel-shoval-portfolio.git"
+  },
+  "keywords": [
+    "anat",
+    "shoval",
+    "knebel",
+    "3dmax",
+    "after effects",
+    "CV",
+    "UI",
+    "UX",
+    "C# asp.NET"
+  ],
+  "author": "Anat Knebel Shoval <anat.shoval@gmail.com> (anatShoval)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "engines": {
+    "node": "7.10.0"
+  }
+}
