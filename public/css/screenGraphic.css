@@ -501,7 +501,7 @@ footer a:hover { color: #000; }
     section.how-to blockquote { margin: 10px 40px 0 20px;}
                                       /* Top Right Bottom Left*/   
     /* Nav */
-    nav { padding-top: 30px; background-color: rgb(72, 9, 28); }
+    nav { padding-top: 30px; background-color: rgb(78, 56, 0); }
     nav a.mobile_menu { left:auto; right: 40px; top: 14px; margin-left: 0px; }
 
     /* Footer */
