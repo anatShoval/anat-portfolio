@@ -34,6 +34,12 @@ app.get('/GraphicDesign.html', function (req, res) {
     })
 })
 
+app.get('/ContactMe.html', function (req, res) {
+    res.sendFile('ContactMe.html', {
+        root: __dirname
+    })
+})
+
 app.listen(3000, function () {
  console.log('Example app listening on port 3000!')
 })
