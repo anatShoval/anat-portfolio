@@ -3,20 +3,22 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>About Anat Knebel Shoval</title>
-        <link rel="stylesheet" type="text/css" media="screen" href="/css/screenContactMe.css" />
-        <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+		<title>3D Animation - Anat Knebel Shoval</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/screen3D.css" />
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="/js/design.js"></script>
+        <!--<script type="text/javascript" src="js/videoJS.js"></script>-->
+
 	</head>
-	<body>
+	<body onload="pageLoad()">
         <div id="page">
             <header>
                 <a class="logo" title="AKS logo" href="/"><span>AKS logo</span></a>
                 <div class="hero">
-                    <h1>Contact Me</h1>
+                    <h1>2D Animation</h1>
                     <a class="btn" title="Get advice from top designers" href="/">Enter my CV<span>: Instructional/Web Design | Animation & Postproduction | UX & UI </span></a>
                 </div>
+
                 <nav>
                     <a class="mobile_menu" title="Menu" href="#"></a>
                     <ul>
@@ -30,7 +32,7 @@
                                     <a title="Animation" href="#" aria-haspopup="true">Animation</a>
                                     <ul>
                                         <li>
-                                            <a title="2D" href="2DAnimation.html">2D</a>
+                                            <a title="2D" href="#">2D</a>
                                         </li>
                                         <li>
                                             <a title="3D" href="3DAnimation.html">3D</a>
@@ -51,45 +53,44 @@
                                         </li>
                                     </ul>
                                 </li>
-                                
+
                                 <li>
                                     <a title="Instructional Design" href="#">Instructional Design</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a title="Contact Me" href="#">Contact Me</a>
+                            <a title="Contact Me" href="ContactMe.html">Contact Me</a>
                         </li>
                     </ul>
                 </nav>
             </header>
-
-            <div class="container">
-                <form id="contact" action="mailto:anat.shoval@gmail.com" method="post">
-                    <h3>Contact me:</h3>
-                    <img class="iconCss" src="/images/basic_geolocalize-01.png" alt="Address icon"><span>Rehovot</span></br>
-                    <img class="iconCss" src="/images/basic_smartphone.png" alt="pone number icon"><span>050-7487199</span></br>
-                    <img class="iconCss" src="/images/basic_mail.png" alt="Email address icon"><span>anat.shoval@gmail.com</span></br>
             
-                    <h4>Send me an Email:</h4>
-                    <fieldset>
-                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-                    </fieldset>
-                    <fieldset>
-                        <textarea placeholder="Type your Message Here...." tabindex="4" required></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                    </fieldset>
-                </form>
-            </div>
+            <div class="allVideos">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 2</div>
+                        <iframe width="854" height="480" src="https://www.youtube.com/embed/qNI-5VgM_xc" frameborder="0" gesture="media" allowfullscreen="allowfullscreen" style="width:100%"></iframe>
+                        <div class="text">2D Animation - a short film - Anat Knebel Shoval</div>
+                    </div>
 
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 2</div>
+                        <iframe width="854" height="480" src="https://www.youtube.com/embed/rfkXR_r8_qc" frameborder="0" gesture="media" allowfullscreen="allowfullscreen" style="width:100%"></iframe>
+                        <div class="text">2D Animation sketches - Anat Knebel Shoval</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            
             <footer>
                 &copy; Anat Knebel Shoval
                 <div class="content">

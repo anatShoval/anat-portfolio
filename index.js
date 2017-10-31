@@ -22,6 +22,12 @@ app.get('/3DAnimation.html', function (req, res) {
     })
 })
 
+app.get('/2DAnimation.html', function (req, res) {
+    res.sendFile('2DAnimation.html', {
+        root: __dirname
+    })
+})
+
 app.get('/AboutMe.html', function (req, res) {
     res.sendFile('AboutMe.html', {
         root: __dirname
