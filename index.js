@@ -46,6 +46,13 @@ app.get('/ContactMe.html', function (req, res) {
     })
 })
 
+app.get('/CodeCorner.html', function (req, res) {
+    res.sendFile('CodeCorner.html', {
+        root: __dirname
+    })
+})
+
+
 
 app.listen(process.env.PORT || 3000, function () {
  console.log('Anat Portfolio app listening on port ' + (process.env.PORT || 3000))
