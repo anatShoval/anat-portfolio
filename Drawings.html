@@ -1,22 +1,22 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Contact me - Anat Knebel Shoval</title>
-        <link rel="stylesheet" type="text/css" media="screen" href="/css/screenContactMe.css" />
-        <link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+		<title>My Drawings - Anat Knebel Shoval</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/screenGraphic.css" />
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="/js/design.js"></script>
+        <script type="text/javascript" src="/js/splitImagesJS.js"></script>
 	</head>
-	<body>
+	<body onload="pageLoad()">
         <div id="page">
             <header>
                 <a class="logo" title="AKS logo" href="/"><span>AKS logo</span></a>
                 <div class="hero">
-                    <h1>Contact Me</h1>
+                    <h1>My Drawings</h1>
                     <a class="btn" title="Get advice from top designers" href="/">Enter my CV<span>: Instructional/Web Design | Animation & Postproduction | UX & UI </span></a>
                 </div>
+
                 <nav>
                     <a class="mobile_menu" title="Menu" href="#"></a>
                     <ul>
@@ -47,49 +47,61 @@
                                             <a title="Graphic Design" href="GraphicDesign.html">Graphic Design</a>
                                         </li>
                                         <li>
-                                            <a title="Drawings" href="Drawings.html">Drawings</a>
+                                            <a title="Drawings" href="#">Drawings</a>
                                         </li>
                                     </ul>
                                 </li>
-                                
+
                                 <li>
                                     <a title="Instructional Design" href="#">Instructional Design</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a title="Contact Me" href="#">Contact Me</a>
+                            <a title="Contact Me" href="ContactMe.html">Contact Me</a>
                         </li>
                     </ul>
                 </nav>
             </header>
+            <div class="allVideos">
+                <div class="slideshow-container">
 
-            <div class="container">
-                <form id="contact" action="mailto:anat.shoval@gmail.com" method="post">
-                    <h3>Contact me:</h3>
-                    <img class="iconCss" src="/images/basic_geolocalize-01.png" alt="Address icon"><span>Rehovot</span></br>
-                    <img class="iconCss" src="/images/basic_smartphone.png" alt="pone number icon"><span>050-7487199</span></br>
-                    <img class="iconCss" src="/images/basic_mail.png" alt="Email address icon"><span>anat.shoval@gmail.com</span></br>
-            
-                    <h4>Send me an Email:</h4>
-                    <fieldset>
-                        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-                    </fieldset>
-                    <fieldset>
-                        <textarea placeholder="Type your Message Here...." tabindex="4" required></textarea>
-                    </fieldset>
-                    <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                    </fieldset>
-                </form>
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <div class="ba-slider">
+                            <img src="/images/portfolio/Albert_Einstein.jpg" alt="My illustration of Albert Einstein picture">
+                            <div class="resize">
+                                <img src="/images/portfolio/Albert_Einstein_Head.jpg" alt="The origenal picture of Albert Einstein">
+                            </div>
+                            <span class="handle"></span>
+                        </div>
+                        <div class="text">Albert Einstein (The yellow slide is movable).</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                            <img src="/images/portfolio/wallPainting.jpg" alt="A wall painting of a sad fairy">
+                        <div class="text">A wall painting of a sad fairy (The yellow slide is movable).</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                            <img src="/images/portfolio/aFerryCaughtInCobwebs.jpg" alt="A picture of a fairy that is caught in cobwebs">
+                        <div class="text">A fairy that is caught in cobwebs</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
-
+            
             <footer>
                 &copy; Anat Knebel Shoval
                 <div class="content">

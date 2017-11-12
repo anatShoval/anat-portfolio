@@ -52,6 +52,11 @@ app.get('/CodeCorner.html', function (req, res) {
     })
 })
 
+app.get('/Drawings.html', function (req, res) {
+    res.sendFile('Drawings.html', {
+        root: __dirname
+    })
+})
 
 
 app.listen(process.env.PORT || 3000, function () {
