@@ -9,5 +9,5 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repository.
 1. `$ npm install`
 1. `$ npm start`
-1. A URL was printed. Open it in a browser.
+1. The URL will be printed automaticly in a new browser, if faild to do so, use the following URL: http://localhost:3000/
 
